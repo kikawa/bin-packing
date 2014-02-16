@@ -12,14 +12,10 @@ def first_fit(list_items, max_size):
 		# Go through bins and try to allocate
 		alloc_flag = False
 
-		print("item %d:" % item)
-
 		for bin in list_bins:
-			print("\tBin %r - Size %d - Space %d" % (bin, bin.sum(), max_size-bin.sum()))
 			if bin.sum() + item <= max_size:
 				bin.addItem(item)
 				alloc_flag = True
-				print("\tAdded to current bin")
 				break
 		
 		# If item not allocated in bins in list, create new bin
@@ -28,7 +24,6 @@ def first_fit(list_items, max_size):
 			newBin = Bin()
 			newBin.addItem(item)
 			list_bins.append(newBin)
-			print("\tNew bin created.")
 
 	# Turn bins into list of items and return
 	list_items = []
