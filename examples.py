@@ -2,7 +2,7 @@
 from first_fit import first_fit
 from first_fit_dec import first_fit_dec
 
-items = [8, 16, 12, 8, 45, 18, 30, 7, 10, 14, 9, 9, 52]
+items = [8, 16, 12, 8, 45, 18, 30, 7, 10, 14, 9, 9, 52, 88]
 bin_height = 60
 
 # First-fit Algorithm
